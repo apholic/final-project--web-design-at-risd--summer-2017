@@ -2,10 +2,384 @@
 <html>
 <head>
    <meta charset="utf-8">
-   <title></title>
+   <title>Ruochun Yang|Final</title>
    <link href="css/base.css" rel="stylesheet">
    <link href="css/main.css" rel="stylesheet">
+   <style media="screen" type="text/css">
+   .container1 {
+   width:100%;
+   height:120vh;
+   background-image: url(https://bodyheightweight.com/wp-content/uploads/2016/07/alexander-mcqueen-height-weight-body-measurements-2.jpg);
+   background-size: cover;
+   background-attachment:fixed;
+}
+
+.container2{
+   background-color:rgb(232,231,224);
+   background-size:100%;
+   width:100%;
+   height: 40vh;
+   z-index:2;
+   position:absolute;
+}
+
+.about h1{
+   font-family: Baskerville;
+   font-size: 6vw;
+   margin-left:10vw;
+   margin-top: 15vh;
+}
+
+.about p{
+   font-family:Baskerville;
+   font-size:1.4vw;
+   margin-left: 65vw;
+   width: 30%;
+   margin-top: -21vh;
+   line-height: 1.6vw;
+
+}
+.timeline ul{
+   margin-top: 40vh;
+   background-image:url(http://d3i6fh83elv35t.cloudfront.net/newshour/wp-content/uploads/2015/09/GettyImages-129634451.jpg);
+   height: 110vh;
+   background-size:cover;
+   background-attachment: fixed;
+}
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin-left: 50vw;
+  padding-top: 50px;
+  background: rgb(232,57,0);
+  font-family:Baskerville;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 200px;
+  padding: 15px;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 5px;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 30px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -250px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -20px;
+}
+
+a {
+   text-decoration: none;
+   color:black;
+}
+
+.info {
+   width: 100vw;
+   height:144vh;
+   background:gray;
+   position:absolute;
+}
+
+#img1, #img2{
+   width: 30vw;
+   height:72vh;
+   position:absolute;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.info p{
+   width:20vw;
+   background:gray;
+   padding-top:5vh;
+   margin-left:5vw;
+   line-height:1.8vw;
+   font-family:baskerville;
+}
+
+.info h3 {
+font-family: baskerville;
+font-size:3vw;
+margin-left: 2.5vw;
+padding-top: 5vh;
+}
+
+#img1:hover{
+opacity: 0;
+}
+
+#img2 {
+   width:30vw;
+   margin-top:-56vh;
+   margin-left: 30vw;
+   height:72vh;
+   z-index:20;
+}
+
+#img2:hover{
+   opacity:0;
+}
+
+#image-wrap2 p{
+margin-left:35vw;
+margin-top:-45vh;
+position:absolute;
+}
+
+#image-wrap2 h3 {
+margin-left:35vw;
+margin-top:-56vh;
+position:absolute;
+z-index:5;
+}
+
+#img3{
+   height:72vh;
+   width:40vw;
+   object-fit:cover;
+   position:absolute;
+   z-index:20;
+   margin-left: 60vw;
+   margin-top:-56vh;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+#img3:hover{
+   opacity:0;
+}
+
+#image-wrap3 p{
+margin-left:65vw;
+margin-top:-45vh;
+width:32vw;
+position:absolute;
+}
+
+#image-wrap3 h3 {
+margin-left:65vw;
+margin-top:-56vh;
+position:absolute;
+z-index:5;
+}
+
+#img4{
+   height:72vh;
+   width:30vw;
+   object-fit:cover;
+   position:absolute;
+   z-index:20;
+   margin-top:16vh;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+#img4:hover{
+   opacity:0;
+}
+
+#image-wrap4 p{
+margin-left:5vw;
+margin-top:30vh;
+width:20vw;
+position:absolute;
+}
+
+#image-wrap4 h3 {
+margin-left:5vw;
+margin-top:15vh;
+width:20vw;
+position:absolute;
+z-index:5;
+}
+
+#img5{
+   height:72vh;
+   width:30vw;
+   object-fit:cover;
+   position:absolute;
+   z-index:20;
+   margin-top:16vh;
+   margin-left:30vw;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+#img5:hover{
+   opacity:0;
+}
+
+#image-wrap5 p{
+margin-left:35vw;
+margin-top:30vh;
+width:20vw;
+position:absolute;
+}
+
+#image-wrap5 h3 {
+margin-left:34vw;
+margin-top:18vh;
+width:20vw;
+position:absolute;
+z-index:5;
+}
+
+#img6{
+   height:72vh;
+   width:40vw;
+   object-fit:cover;
+   position:absolute;
+   z-index:20;
+   margin-left: 60vw;
+   margin-top:16vh;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+#img6:hover{
+   opacity:0;
+}
+
+#image-wrap6 p{
+margin-left:65vw;
+margin-top:30vh;
+width:32vw;
+position:absolute;
+}
+
+#image-wrap6 h3 {
+margin-left:65vw;
+margin-top:18vh;
+position:absolute;
+z-index:5;
+}
+
+   </style>
 </head>
 <body>
+   <div class=container1>
+   </div>
+   <section class="intro">
+     <div class="container2">
+      <div class="about">
+      <h1>Alexander McQueen</h1>
+      <p>
+      Lee Alexander McQueen, CBE (17 March 1969 – 11 February 2010), known professionally as Alexander McQueen, was a British fashion designer and couturier. He is known for having worked as chief designer at Givenchy from 1996 to 2001 and for founding his own Alexander McQueen label. His achievements in fashion earned him four British Designer of the Year awards (1996, 1997, 2001 and 2003), as well as the CFDA's International Designer of the Year award in 2003. McQueen died by suicide in 2010 at the age of forty.
+      </p>
+     </div>
+     </div>
+   </section>
+   <div class="container3">
+      <section class="timeline">
+        <ul>
+          <li id=li1>
+            <div>
+              <h2><a href="#img1">HIGHLAND RAPE</a></h2>
+            </div>
+          </li>
+          <li>
+            <div>
+            <h2>VOSS</h2>
+            </div>
+          </li>
+          <li>
+            <div>
+            <h2>DELIVERANCE </h2>
+            </div>
+          </li>
+          <li>
+            <div>
+            <h2>IT’S ONLY A GAME</h2>
+            </div>
+          </li>
+          <li>
+            <div>
+            <h2>WIDOWS OF CULLODEN</h2>
+            </div>
+          </li>
+          <li>
+            <div>
+            <h2>SARABANDE</h2>
+            </div>
+          </li>
+        </ul>
+      </section>
+   </div>
+      <section class=info>
+         <div class=image-wrap>
+            <img id=img1 src="http://blog.metmuseum.org/alexandermcqueen/images/McQ.152a–d.EL.jpg" alt="image of highland rape">
+            <h3>HIGHLAND RAPE</h3>
+            <p>
+            “People were so unintelligent they thought this was about women being raped – yet ‘highland rape’ was about England’s rape of Scotland” [Alexander McQueen]. The name McQueen gave this show and his slashing and shredding of some of the pieces sparked controversy about this collection. It featured Edwardian collars, lace fragments and dresses in traditional tartans cut deep or torn to expose the breasts.
+            </p>
+         </div>
+         <div class=image-wrap id=image-wrap2>
+            <img id=img2 src="http://2.bp.blogspot.com/-wTi4b9nBfRA/Th5Q4e8bXQI/AAAAAAAAApo/fyHUK6UhnTo/s1600/18.McQueenVOSSSp2001OysterShells.jpg" alt="image of voss" >
+            <h3>VOSS</h3>
+            <p>
+            Nicknamed the Asylum Collection, this elaborate show cost £70,000 and took seven days to construct. Models watched themselves in a two-way mirror, walking around an inner cube which opened to reveal a naked body covered in butterflies and moths; recreating a photograph by Joel-Peter Witkin. The finale outfit, worn by model Karen Elson, was constructed from a vintage silk kimono and segments of a two hundred year old Japanese screen.
+            </p>
+         </div>
+         <div class=image-wrap id=image-wrap3>
+            <img id=img3 src="http://blog.metmuseum.org/alexandermcqueen/images/12.McQueenSp2007SarabandeFlowers.EL.jpg" >
+            <h3>SARABANDE </h3>
+            <p>
+            This show took place at the Cirque D’Hiver in Paris, inspired by the 1975 film Barry Lyndon and iconic eccentric Marchesa Casati. Real flowers adorned the dress worn by model Tanya Dziahileva, and petals dropped behind her as she walked. “Things rot. It was all about decay. I used flowers because they die” [Alexander McQueen]. Where much of the collection was mourning clothes, McQueen exaggerated funereal elements and played with body shapes through padding.
+            </p>
+         </div>
+         <div class=image-wrap id=image-wrap4>
+            <img id=img4 src="http://www.klatmagazine.com/wp-content/uploads/2015/05/Klat_Alexander_McQueen_Savage_Beauty_09.jpg" >
+            <h3>WIDOWS OF CULLODEN</h3>
+            <p>
+            In tribute to the women who lost their husbands in the bloody battle of Culloden, McQueen returns to Scotland for his inspiration. Despite feather and stag horn headdresses, Elizabethan ruffs, veils of antique lace and rich Scottish tartan, this show will be best remembered for the haunting hologram of Kate Moss, a vision in floating organza.
+            </p>
+         </div>
+         <div class=image-wrap id=image-wrap5>
+            <img id=img5 src="http://joellemagazine.com/wp-content/uploads/2012/10/0023McQueen-RTW-S-S-2004.jpg" >
+            <h3>DELIVERANCE </h3>
+            <p>
+            With the help of Michael Clark’s choreography, McQueen re-enacted the dance marathon of Sydney Pollack’s film They Shoot Horses Don’t They. The models danced, ran, and collapsed their way around the stage, at first in old school glamour with stunning ostrich feather ball gowns. Then, as the marathon progressed, in fitted sportswear cut for movement in pinks and greys, and finally in western denim and plaid.
+            </p>
+         </div>
+         <div class=image-wrap id=image-wrap6>
+            <img id=img6 src="https://s4.reutersmedia.net/resources/r/?m=02&d=20150312&t=2&i=1031709562&w=&fh=545px&fw=&ll=&pl=&sq=&r=LYNXMPEB2B12T" >
+            <h3>IT’S ONLY A GAME</h3>
+            <p>
+            The catwalk was transformed into a giant chessboard, as 36 models took their places and then fought against each other. Some looks referenced McQueen’s archive, while others were inspired by the film Picnic at Hanging Rock, set in the early twentieth century.
+            </p>
+         </div>
+      </section>
 </body>
 </html>
